@@ -15,12 +15,12 @@ public class GameMinDTO {
 
     public GameMinDTO(){}
 
-    public GameMinDTO(GameMinProjection entity) {
-        id = entity.getId();
-        title = entity.getTitle();
-        year = entity.getYear();
-        imgUrl = entity.getImgUrl();
-        shortDescription = entity.getShortDescription();
+    public GameMinDTO(GameMinProjection projection) {
+        id = projection.getId();
+        title = projection.getTitle();
+        year = projection.getGameYear();
+        imgUrl = projection.getImgUrl();
+        shortDescription = projection.getShortDescription();
     }
 
     public GameMinDTO(Game entity) {
@@ -51,3 +51,4 @@ public class GameMinDTO {
         return shortDescription;
     }
 }
+
